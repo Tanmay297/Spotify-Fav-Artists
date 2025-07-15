@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Fav Artists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            color: #1DB954;
+        }
+       .card-container {
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  gap: 0px;
+}
+
+.Deftone-Card,.Weekend-Card,.carti-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 480px;
+  background-color: #1e1e1e; /* soft dark gray */
+  color: white;
+}
+
+.def-image,.week-img,.carti-img {
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+#about,#about2,#about3{
+    font-size: 13px;
+}
+.defbtn {
+    border-radius: 20px;
+    background-color: #1a1a1a; /* near black */
+    color: #b682ff; /* soft neon purple */
+    padding: 12px 28px;
+    border: 2px solid #b682ff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+  margin-top: auto;
+  border-radius: 20px;
+  padding: 10px 22px;
+  border: 2px solid;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+  .defbtn:hover {
+    background-color: #b682ff;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px #b682ff99;
+  }
+
+  .defbtn:active {
+    transform: scale(0.96);
+  }
+ .weekbtn {
+  border-radius: 20px;
+  background-color: #0e0e0e; /* dark base */
+  color: #b3001b; /* deep crimson red */
+  padding: 10px 22px;
+  border: 2px solid #b3001b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+  border-radius: 20px;
+  padding: 10px 22px;
+  border: 2px solid;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.weekbtn:hover {
+  background-color: #b3001b;
+  color: #0e0e0e;
+  box-shadow: 0 0 10px #b3001b88;
+}
+
+.weekbtn:active {
+  transform: scale(0.96);
+}
+
+.cartibtn {
+  border-radius: 20px;
+  background-color: #000000; /* pure black */
+  color: #ff1a1a; /* rage red */
+  padding: 10px 22px;
+  border: 2px solid #ff1a1a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+  border-radius: 20px;
+  padding: 10px 22px;
+  border: 2px solid;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cartibtn:hover {
+  background-color: #ff1a1a;
+  color: #000000;
+  box-shadow: 0 0 10px #ff1a1a88;
+}
+
+.cartibtn:active {
+  transform: scale(0.96);
+}
+body {
+  background: linear-gradient(135deg, #121212, #1db95433);
+  color: white;
+}
+.site-footer {
+   text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+    </style>
+    <h1>Spotify</h1>
+    <p>Currently dominating Spotify's global charts are a diverse trio of artists, each bringing their own unique sound and influence. Deftones, with their iconic blend of alternative metal and ethereal intensity, continue to attract both longtime fans and new listeners discovering their genre-defining work. The Weeknd remains a streaming powerhouse, with his cinematic pop and moody R&B consistently topping playlists around the world. Meanwhile, Playboi Carti commands massive attention with his experimental rage beats, underground aesthetic, and magnetic persona that resonates strongly with Gen Z listeners. Together, these artists reflect the broad spectrum of what today’s listeners are loving—raw emotion, futuristic sounds, and bold individuality.</p>
+    <div class="card-container">
+    <div class="Deftone-Card">
+        <img src="deftones.jpeg" alt="Deftones Band" class="def-image">
+        <p id="about">Deftones are a genre-blending band known for mixing metal with dreamy sounds. Their music combines heavy riffs, emotional vocals, and experimental tones, making them one of the most unique and influential bands in modern alternative rock.</p>
+        <button class="defbtn">Read More</button>
+    </div>
+    <div class="Weekend-Card">
+        <img src="the weeknd.jpeg" alt="The Weeknd" class="week-img">
+        <p id="about2">The Weeknd blends R&B with pop, creating dark, emotional soundscapes. Known for hits like “Blinding Lights” and “Starboy,” his cinematic production and haunting vocals make him one of the most unique and influential artists in modern music.
+        </p>
+        <button class="weekbtn">Read More</button>
+    </div>
+    <div class="carti-card">
+      <img src="Carti.jpeg" alt="Playboi Carti" class="carti-img">
+      <p id="about3">Carti is an American rapper known for his experimental sound, hypnotic beats, and rebellious energy. With albums like Whole Lotta Red, he’s built a cult following through his unique style, distorted vocals, and punk-inspired rage aesthetic that connects deeply with Gen Z audiences.</p>
+      <button class="cartibtn">Read More</button>
+    </div>
+    </div>
+    <footer class="site-footer">
+  <p>Built for learning · Frontend practice · All rights to original artists 🎧</p>
+</footer> 
+</body>
+</html>
